@@ -1,0 +1,101 @@
+/* Shop Component */
+.Shop {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.ShopTitle {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.Products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust column size as needed */
+  grid-gap: 20px; /* Optional: Adjust gap between items */
+}
+
+/* Product Component */
+.product {
+  position: relative;
+  width: 100%; /* Adjust the width as needed */
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  justify-content: space-between;
+}
+
+.product:hover {
+  transform: scale(1.05);
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.description {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  transform: translateY(-50%);
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.product:hover .description {
+  opacity: 1;
+}
+
+.productName {
+  margin-bottom: 5px;
+}
+
+.productDescription {
+  display: none;
+}
+
+.product:hover .productDescription {
+  display: block;
+}
+
+.price {
+  margin-top: 10px;
+}
+
+.AddToCart {
+  width: 100%;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 0 0 8px 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  z-index: 1;
+}
+
+.AddToCart:hover {
+  background-color: #555;
+}
+
+/* Responsive Styling */
+@media (max-width: 1200px) {
+  .product {
+    width: 100%;
+  }
+}

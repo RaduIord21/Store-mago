@@ -1,0 +1,36 @@
+/* Add styles for the Navbar component */
+.Navbar {
+  background-color: #606060; /* Set the background color of the navbar */
+  color: white; /* Set text color to white */
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
+
+/* Add styles for the links container */
+.links {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space out the elements evenly */
+  align-items: center; /* Center items vertically */
+}
+
+/* Add styles for the logo link */
+.logo {
+  text-decoration: none; /* Remove underlines from the link */
+}
+
+.logo img {
+  width: 10%; /* Adjust the width of the logo image */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Add styles for the shopping cart link */
+.shoppingCart {
+  text-decoration: none; /* Remove underlines from the link */
+  color: white; /* Set text color to white */
+}
+
+/* Optional: Add hover effect for the shopping cart link */
+.shoppingCart:hover {
+  color: #ffd700; /* Change text color on hover */
+}
